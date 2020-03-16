@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="shortcut icon" href="assets/img/home.png">
+</head>
+
+<body>
+  <div id="content"><br>
+    <div class="search_part"><a class="logo" href="https://github.com/ivitan">
+      <img class="smaller" src="assets/img/google.png"></a><br>
+      <form onsubmit="return search()" class="search_bar" <span=""><input class="search" type="text" value=""
+          autocomplete="off" id="search_input" placeholder="在 Google 上搜索"></form>
+    </div><br>
+    <div class="box"><a href="https://google.com" target="_blank"
+        class="click"></a>
+      <p><img class="icon" src="assets/img/GoogleSearch.png"></p>
+      <p class="url">Google</p>
+    </div>
+    <div class="box"><a href="https://github.com" target="_blank" class="click"></a>
+      <p><img class="icon" src="assets/img/github.png"></p>
+      <p class="url">Github</p>
+    </div>
+    <div class="box"><a href="https://bilibili.com/" target="_blank" class="click"></a>
+      <p><img class="icon" src="assets/img/bilibili.png"></p>
+      <p class="url">哔哩哔哩</p>
+    </div>
+    <div class="box"><a href="http://v2ex.com" target="_blank" class="click"></a>
+      <p><img class="icon" src="assets/img/one.png"></p>
+      <p class="url">一加论坛</p>
+    </div><br>
+    <div class="box"><a href="http://v2ex.com" target="_blank" class="click"></a>
+      <p><img class="icon" src="assets/img/v2ex.png"></p>
+      <p class="url">V2EX</p>
+    </div>
+    <div class="box"><a href="https://exmail.qq.com/" target="_blank" class="click"></a>
+      <p><img class="icon" src="assets/img/mail.png"></p>
+      <p class="url">企业邮箱</p>
+    </div>
+    <div class="box"><a href="https://sspai.com/" target="_blank" class="click"></a>
+      <p><img class="icon" src="assets/img/sspai.png"></p>
+      <p class="url">少数派</p>
+    </div>
+    <div class="box"><a href="https://vitan.me" target="_blank" class="click"></a>
+      <p><img class="icon" src="assets/img/vitan.png"></p>
+      <p class="url">vitan.me</p>
+    </div>
+    <script type="text/javascript">
+      function search() {
+        if (document.getElementById("search_input").value != "") {
+          window.location.href = "https://www.google.com/search?q=" + document.getElementById("search_input").value;
+          document.getElementById("search_input").value = ""
+        }
+        return false
+      }
+    </script>
+  </div>
+</body>
+
+</html>
